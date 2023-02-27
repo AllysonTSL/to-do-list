@@ -2,6 +2,8 @@ const newTask       = document.querySelector("#new-task")
 const btnAddTask    = document.querySelector("#add-task")
 const todoList      = document.querySelector(".todo-list ul")
 
+document.querySelector(".Complete-list ul")
+
 // Funções
 const checkDone = function (event) {
     const task = event.target.parentNode
