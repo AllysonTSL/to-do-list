@@ -2,7 +2,7 @@ const newTask       = document.querySelector("#new-task")
 const btnAddTask    = document.querySelector("#add-task")
 const todoList      = document.querySelector(".todo-list ul")
 
-document.querySelector(".Complete-list ul")
+document.querySelector(".complete-list ul")
 
 // Funções
 const checkDone = function (event) {
@@ -17,6 +17,9 @@ btnAddTask.onclick = function() {
     const taskExample = document.querySelector("#task-example")
     if(taskExample !== null) {
         todoList.removeChild(taskExample)
+        const li = document.createElement("lixo")
+        li.innerText = taskText
+        completeList.appendChild(lixo)
     }
     const li    = document.createElement("li")
     const check = document.createElement("input") 
