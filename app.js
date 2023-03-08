@@ -27,7 +27,7 @@ const checkDone = function (event) {
     cb.addEventListener("change", checkDone);
 
     const deleteButton = document.createElement("button");
-    deleteButton.innerText = "Deletar";
+    deleteButton.innerText = "Apagar";
     deleteButton.classList.add("delete");
     taskUndo.appendChild(deleteButton);
 
@@ -44,9 +44,9 @@ const addListItem = function (list, value, checked = false) {
   const deleteButton = document.createElement("button");
   check.setAttribute("type", "checkbox");
   li.appendChild(check);
-  label.innerHTML = <span>${value}</span>;
+  label.innerHTML = `<span>${value}</span>`;
   li.appendChild(label);
-  deleteButton.innerText = "Deletar";
+  deleteButton.innerText = "Apagar";
   deleteButton.classList.add("delete");
   li.appendChild(deleteButton);
   list.appendChild(li);
