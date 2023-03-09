@@ -3,7 +3,7 @@
 
 <head>
     <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap" rel="stylesheet">
@@ -13,22 +13,23 @@
     <section class="container">
         <h1>Lista de Tarefas</h1>
         <div class="new-task-container box">
-            <label for="new-task">Adicionar nova tarefa</label>
-            <input type="text" id="new-task">
-            <button id="add-task">Adicionar</button>
+            <input type="text" id="new-task"  placeholder="Insira uma tarefa aqui">
+            <button id="add-task"> <img src="https://cdn-icons-png.flaticon.com/512/117/117885.png" height= 30px width = 30px> </button>
         </div>
         <div class="todo-list box">
-            <h2>Tarefas a fazer</h2>
-            <ul>
-                <li id="task-example">
-                    <input type="checkbox">
-                    <label>Nome da tarefa</label>
-                </li>
+          </br>
+            <ul id ="ul1">
+              <li id ="task-title1"> <h2>Tarefas a fazer</h2> </li>
+              <li id="task-example">
+                  <input type="checkbox">
+                  <label>Nome da tarefa</label>
+              </li>
             </ul>
         </div>
         <div class="complete-list box">
-  <h2>Tarefas feitas</h2>
-  <ul>
+        </br>
+  <ul id ="ul2">
+    <li id="task-title2"><h2>Tarefas feitas</h2> </li>
     <li id="task-done-example">
       Nome da tarefa
       <button class="delete">Apagar</button>
@@ -38,6 +39,6 @@
 
     </section>
 
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
