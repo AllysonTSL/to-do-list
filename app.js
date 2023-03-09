@@ -1,6 +1,6 @@
 const newTask = document.querySelector("#new-task");
 const btnAddTask = document.querySelector("#add-task");
-const todoList = document.querySelector(".todo-list ul");
+const todoList = document.querySelector("#ul1");
 const doneList = document.querySelector(".complete-list ul");
 
 // Funções
